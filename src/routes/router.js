@@ -107,14 +107,9 @@ router.get("/", (req, res) =>
       },
     },
     dzikir: {
-      semua: {
-        pattern: "/dzikir",
-      },
-      spesifik: {
-        pattern: "/dzikir/{sumber}",
-        sumber: "pagi, sore, solat",
-        contoh: "/dzikir/pagi",
-      },
+      pattern: "/dzikir/{sumber}",
+      sumber: "pagi, sore, solat",
+      contoh: "/dzikir/pagi",
     },
     hadits: {
       semua: {
