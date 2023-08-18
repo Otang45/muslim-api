@@ -11,11 +11,11 @@ const PORT = process.env.PORT || 3000;
 app.set("trust proxy", 1);
 app.use(cors());
 app.use(express.json());
-app.use("/api", router);
-app.use("/api/quran", quranRoutes);
-app.use("/api/doa", doaRoutes);
-app.use("/api/dzikir", dzikirRoutes);
-app.use("/api/hadits", haditsRoutes);
+app.use("/", router);
+app.use("/quran", quranRoutes);
+app.use("/doa", doaRoutes);
+app.use("/dzikir", dzikirRoutes);
+app.use("/hadits", haditsRoutes);
 
 app.listen(PORT, () => {
   console.log("Running at port:", PORT);
