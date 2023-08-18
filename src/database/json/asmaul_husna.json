@@ -1,0 +1,596 @@
+[
+    {
+        "arab": "الرَّحْمـٰنُ",
+        "id": 1,
+        "indo": "Yang Maha Pengasih",
+        "latin": "Ar-Rahmânu"
+    },
+    {
+        "arab": "الرَّحِيْمُ",
+        "id": 2,
+        "indo": "Yang Maha Penyayang",
+        "latin": "Ar-Raḫîmu"
+    },
+    {
+        "arab": "الْمَلِكُ",
+        "id": 3,
+        "indo": "Yang Maha Merajai/Memerintah",
+        "latin": "Al-Maliku"
+    },
+    {
+        "arab": "الْقُدُّوْسُ",
+        "id": 4,
+        "indo": "Yang Mahasuci",
+        "latin": "Al-Quddûsu"
+    },
+    {
+        "arab": "السَّلاَمُ",
+        "id": 5,
+        "indo": "Yang Maha Memberi Kesejahteraan",
+        "latin": "As-Salâmu"
+    },
+    {
+        "arab": "الْمُؤْمِنُ",
+        "id": 6,
+        "indo": "Yang Maha Memberi Keamanan",
+        "latin": "Al-Mu’minu"
+    },
+    {
+        "arab": "الْمُهَيْمِنُ",
+        "id": 7,
+        "indo": "Yang Maha Pemelihara",
+        "latin": "Al-Muhaiminu"
+    },
+    {
+        "arab": "الْعَزِيْزُ",
+        "id": 8,
+        "indo": "Yang Memiliki Mutlak Kegagahan",
+        "latin": "Al-`Azizu"
+    },
+    {
+        "arab": "الْجَبَّارُ",
+        "id": 9,
+        "indo": "Yang Maha Perkasa",
+        "latin": "Al-Jabbâru"
+    },
+    {
+        "arab": "الْمُتَكَبِّرُ",
+        "id": 10,
+        "indo": "Yang Maha Megah",
+        "latin": "Al-Mutakabbiru"
+    },
+    {
+        "arab": "الْخَالِقُ",
+        "id": 11,
+        "indo": "Yang Maha Pencipta",
+        "latin": "Al-Khâliqu"
+    },
+    {
+        "arab": "الْبَارِئُ",
+        "id": 12,
+        "indo": "Yang Maha Melepaskan",
+        "latin": "Al-Bâri’u"
+    },
+    {
+        "arab": "الْمُصَوِّرُ",
+        "id": 13,
+        "indo": "Yang Maha Membentuk Rupa (makhluknya)",
+        "latin": "Al-Mushawwiru"
+    },
+    {
+        "arab": "الْغَفَّارُ",
+        "id": 14,
+        "indo": "Yang Maha Pengampun",
+        "latin": "Al-Ghaffaru"
+    },
+    {
+        "arab": "الْقَهَّارُ",
+        "id": 15,
+        "indo": "Yang Maha Memaksa",
+        "latin": "Al-Qahhâru"
+    },
+    {
+        "arab": "الْوَهَّابُ",
+        "id": 16,
+        "indo": "Yang Maha Pemberi Karunia",
+        "latin": "Al-Wahhâbu"
+    },
+    {
+        "arab": "الرَّزَّاقُ",
+        "id": 17,
+        "indo": "Yang Maha Pemberi Rezeki",
+        "latin": "Ar-Razzâqu"
+    },
+    {
+        "arab": "الْفَتَّاحُ",
+        "id": 18,
+        "indo": "Yang Maha Pembuka Rahmat",
+        "latin": "Al-Fattâhu"
+    },
+    {
+        "arab": "الْعَلِيْمُ",
+        "id": 19,
+        "indo": "Yang Maha Mengetahui (Memiliki Ilmu)",
+        "latin": "Al-`Alîmu"
+    },
+    {
+        "arab": "الْقَابِضُ",
+        "id": 20,
+        "indo": "Yang Maha Menyempitkan (makhluknya)",
+        "latin": "Al-Qâbidlu"
+    },
+    {
+        "arab": "الْبَاسِطُ",
+        "id": 21,
+        "indo": "Yang Maha Melapangkan (makhluknya)",
+        "latin": "Al-Bâsithu"
+    },
+    {
+        "arab": "الْخَافِضُ",
+        "id": 22,
+        "indo": "Yang Maha Merendahkan (makhluknya)",
+        "latin": "Al-Khâfidlu"
+    },
+    {
+        "arab": "الرَّافِعُ",
+        "id": 23,
+        "indo": "Yang Maha Meninggikan (makhluknya)",
+        "latin": "Ar-Râfi`u"
+    },
+    {
+        "arab": "الْمُعِزُّ",
+        "id": 24,
+        "indo": "Yang Maha Memuliakan (makhluknya)",
+        "latin": "Al-Mu`izzu"
+    },
+    {
+        "arab": "الْمُذِلُّ",
+        "id": 25,
+        "indo": "Yang Maha Menghinakan (makhluknya)",
+        "latin": "Al-Mudzillu"
+    },
+    {
+        "arab": "السَّمِيْعُ",
+        "id": 26,
+        "indo": "Yang Maha Mendengar",
+        "latin": "As-Samî`u"
+    },
+    {
+        "arab": "الْبَصِيْرُ",
+        "id": 27,
+        "indo": "Yang Maha Melihat",
+        "latin": "Al-Bashîru"
+    },
+    {
+        "arab": "الْحَكَمُ",
+        "id": 28,
+        "indo": "Yang Maha Menetapkan",
+        "latin": "Al-Ḫakamu"
+    },
+    {
+        "arab": "الْعَدْلُ",
+        "id": 29,
+        "indo": "Yang Mahaadil",
+        "latin": "Al-`Adlu"
+    },
+    {
+        "arab": "اللَّطِيْفُ",
+        "id": 30,
+        "indo": "Yang Mahalembut",
+        "latin": "Al-Lathîfu"
+    },
+    {
+        "arab": "الْخَبِيْرُ",
+        "id": 31,
+        "indo": "Yang Maha Mengetahui Rahasia",
+        "latin": "Al-Khabîru"
+    },
+    {
+        "arab": "الْحَلِيْمُ",
+        "id": 32,
+        "indo": "Yang Maha Penyantun",
+        "latin": "Al-Ḫalîmu"
+    },
+    {
+        "arab": "الْعَظِيْمُ",
+        "id": 33,
+        "indo": "Yang Mahaagung",
+        "latin": "Al-`Adhîmu"
+    },
+    {
+        "arab": "الْغَفُوْرُ",
+        "id": 34,
+        "indo": "Yang Maha Pengampun",
+        "latin": "Al-Ghafûru"
+    },
+    {
+        "arab": "الشَّكُوْرُ",
+        "id": 35,
+        "indo": "Yang Maha Pembalas Budi (Menghargai)",
+        "latin": "Asy-Syakûru"
+    },
+    {
+        "arab": "العَلِيُّ",
+        "id": 36,
+        "indo": "Yang Maha Tinggi",
+        "latin": "Al-`Aliyyu"
+    },
+    {
+        "arab": "الْكَبِيْرُ",
+        "id": 37,
+        "indo": "Yang Maha Besar",
+        "latin": "Al-Kabîru"
+    },
+    {
+        "arab": "الْحَفِيْظُ",
+        "id": 38,
+        "indo": "Yang Maha Menjaga",
+        "latin": "Al-Ḫafîdhu"
+    },
+    {
+        "arab": "الْمُقِيْتُ",
+        "id": 39,
+        "indo": "Yang Maha Pemberi Kecukupan",
+        "latin": "Al-Muqîtu"
+    },
+    {
+        "arab": "الْحَسِيْبُ",
+        "id": 40,
+        "indo": "Yang Maha Membuat Perhitungan",
+        "latin": "Al-Ḫasîbu"
+    },
+    {
+        "arab": "الْجَلِيْلُ",
+        "id": 41,
+        "indo": "Yang Mahamulia",
+        "latin": "Al-Jalîlu"
+    },
+    {
+        "arab": "الْكَرِيْمُ",
+        "id": 42,
+        "indo": "Yang Maha Pemurah",
+        "latin": "Al-Karîmu"
+    },
+    {
+        "arab": "الرَّقِيْبُ",
+        "id": 43,
+        "indo": "Yang Maha Mengawasi",
+        "latin": "Ar-Raqîbu"
+    },
+    {
+        "arab": "الْمُجِيْبُ",
+        "id": 44,
+        "indo": "Yang Maha Mengabulkan",
+        "latin": "Al-Mujîbu"
+    },
+    {
+        "arab": "الْوَاسِعُ",
+        "id": 45,
+        "indo": "Yang Maha Luas",
+        "latin": "Al-Wâsi`u"
+    },
+    {
+        "arab": "الْحَكِيْمُ",
+        "id": 46,
+        "indo": "Yang Maha Maka Bijaksana",
+        "latin": "Al-Ḫakîmu"
+    },
+    {
+        "arab": "الْوَدُوْدُ",
+        "id": 47,
+        "indo": "Yang Maha Pencinta",
+        "latin": "Al-Wadûdu"
+    },
+    {
+        "arab": "الْمَجِيْدُ",
+        "id": 48,
+        "indo": "Yang Maha Mulia",
+        "latin": "Al-Majîdu"
+    },
+    {
+        "arab": "الْبَاعِثُ",
+        "id": 49,
+        "indo": "Yang Maha Membangkitkan",
+        "latin": "Al-Bâ`itsu"
+    },
+    {
+        "arab": "الشَّهِيْدُ",
+        "id": 50,
+        "indo": "Yang Maha Menyaksikan",
+        "latin": "Asy-Syahîdu"
+    },
+    {
+        "arab": "الْحَقُّ",
+        "id": 51,
+        "indo": "Yang Mahabenar",
+        "latin": "Al-Ḫaqqu"
+    },
+    {
+        "arab": "الْوَكِيْلُ",
+        "id": 52,
+        "indo": "Yang Maha Memelihara",
+        "latin": "Al-Wakîlu"
+    },
+    {
+        "arab": "الْقَوِيُّ",
+        "id": 53,
+        "indo": "Yang Mahakuat",
+        "latin": "Al-Qawiyyu"
+    },
+    {
+        "arab": "الْمَتِيْنُ",
+        "id": 54,
+        "indo": "Yang Mahakokoh",
+        "latin": "Al-Matînu"
+    },
+    {
+        "arab": "الْوَلِيُّ",
+        "id": 55,
+        "indo": "Yang Maha Melindungi",
+        "latin": "Al-Waliyyu"
+    },
+    {
+        "arab": "الْحَمِيْدُ",
+        "id": 56,
+        "indo": "Yang Maha Terpuji",
+        "latin": "Al-Ḫamîdu"
+    },
+    {
+        "arab": "الْمُحْصِيْ",
+        "id": 57,
+        "indo": "Yang Maha Mengalkulasi",
+        "latin": "Al-Muḫshî"
+    },
+    {
+        "arab": "الْمُبْدِئُ",
+        "id": 58,
+        "indo": "Yang Maha Memulai",
+        "latin": "Al-Mubdi’u"
+    },
+    {
+        "arab": "الْمُعِيْدُ",
+        "id": 59,
+        "indo": "Yang Maha Mengembalikan Kehidupan",
+        "latin": "Al-Mu`idu"
+    },
+    {
+        "arab": "الْمُحْيِ",
+        "id": 60,
+        "indo": "Yang Maha Menghidupkan",
+        "latin": "Al-Muḫyi"
+    },
+    {
+        "arab": "الْمُمِيْتُ",
+        "id": 61,
+        "indo": "Yang Maha Mematikan",
+        "latin": "Al-Mumîtu"
+    },
+    {
+        "arab": "الْحَيُّ",
+        "id": 62,
+        "indo": "Yang Mahahidup",
+        "latin": "Al-Ḫayyu"
+    },
+    {
+        "arab": "الْقَيُّوْمُ",
+        "id": 63,
+        "indo": "Yang Mahamandiri",
+        "latin": "Al-Qayyûmu"
+    },
+    {
+        "arab": "الْوَاجِدُ",
+        "id": 64,
+        "indo": "Yang Maha Penemu",
+        "latin": "Al-Wâjidu"
+    },
+    {
+        "arab": "الْمَاجِدُ",
+        "id": 65,
+        "indo": "Yang Mahamulia",
+        "latin": "Al-Mâjidu"
+    },
+    {
+        "arab": "الْوَاحِدُ",
+        "id": 66,
+        "indo": "Yang Maha Tunggal",
+        "latin": "Al-Wâḫidu"
+    },
+    {
+        "arab": "الْأَحَدُ",
+        "id": 67,
+        "indo": "Yang Maha Esa",
+        "latin": "Al-Aḫadu"
+    },
+    {
+        "arab": "الصَّمَدُ",
+        "id": 68,
+        "indo": "Yang Maha Dibutuhkan, Tempat Meminta",
+        "latin": "Ash-Shamadu"
+    },
+    {
+        "arab": "الْقَادِرُ",
+        "id": 69,
+        "indo": "Yang Maha Menentukan, Maha Menyeimbangkan",
+        "latin": "Al-Qâdiru"
+    },
+    {
+        "arab": "الْمُقْتَدِرُ",
+        "id": 70,
+        "indo": "Yang Maha Berkuasa",
+        "latin": "Al-Muqtadiru"
+    },
+    {
+        "arab": "الْمُقَدِّمُ",
+        "id": 71,
+        "indo": "Yang Maha Mendahulukan",
+        "latin": "Al-Muqaddimu"
+    },
+    {
+        "arab": "الْمُؤَخِّرُ",
+        "id": 72,
+        "indo": "Yang Maha Mengakhirkan",
+        "latin": "Al-Muakhiru"
+    },
+    {
+        "arab": "الْاَوَّلُ",
+        "id": 73,
+        "indo": "Yang Mahaawal",
+        "latin": "Al-Awwalu"
+    },
+    {
+        "arab": "الْآخِرُ",
+        "id": 74,
+        "indo": "Yang Mahaakhir",
+        "latin": "Al-Âkhiru"
+    },
+    {
+        "arab": "الظَّاهِرُ",
+        "id": 75,
+        "indo": "Yang Mahanyata",
+        "latin": "Adh-Dhâhiru"
+    },
+    {
+        "arab": "الْبَاطِنُ",
+        "id": 76,
+        "indo": "Yang Maha Ghaib",
+        "latin": "Al-Bâthinu"
+    },
+    {
+        "arab": "الْوَالِي",
+        "id": 77,
+        "indo": "Yang Maha Memerintah",
+        "latin": "Al-Wâlî"
+    },
+    {
+        "arab": "الْمُتَعَالِي",
+        "id": 78,
+        "indo": "Yang Maha Tinggi",
+        "latin": "Al-Muta`âli"
+    },
+    {
+        "arab": "الْبَرُّ",
+        "id": 79,
+        "indo": "Yang Maha Penderma",
+        "latin": "Al-Barru"
+    },
+    {
+        "arab": "التَّوَّابُ",
+        "id": 80,
+        "indo": "Yang Maha Penerima Tobat",
+        "latin": "At-Tawwabu"
+    },
+    {
+        "arab": "الْمُنْتَقِمُ",
+        "id": 81,
+        "indo": "Yang Maha Penuntut Balas",
+        "latin": "Al-Muntaqimu"
+    },
+    {
+        "arab": "الْعَفُوُّ",
+        "id": 82,
+        "indo": "Yang Maha Pemaaf",
+        "latin": "Al-`Afuwwu"
+    },
+    {
+        "arab": "الرَّؤُوْفُ",
+        "id": 83,
+        "indo": "Yang Maha Pengasih",
+        "latin": "Ar-Ra’ûfu"
+    },
+    {
+        "arab": "مَالِكُ الْمُلْكِ",
+        "id": 84,
+        "indo": "Yang Maha Penguasa Kerajaan (Semesta)",
+        "latin": "Mâlikul-mulki"
+    },
+    {
+        "arab": "ذُوْ الْجَلَالِ وَالْاِكْرَامِ",
+        "id": 85,
+        "indo": "Yang Maha Pemilik Kebesaran dan Kemuliaan",
+        "latin": "Dzul-Jalâli wal-Ikram"
+    },
+    {
+        "arab": "الْمُقْسِطُ",
+        "id": 86,
+        "indo": "Yang Mahaadil",
+        "latin": "Al-Muqsithu"
+    },
+    {
+        "arab": "الْجَامِعُ",
+        "id": 87,
+        "indo": "Yang Maha Mengumpulkan",
+        "latin": "Al-Jâmi`u"
+    },
+    {
+        "arab": "الْغَنِيُّ",
+        "id": 88,
+        "indo": "Yang Maha Berkecukupan",
+        "latin": "Al-Ghaniyyu"
+    },
+    {
+        "arab": "الْمُغْنِيْ",
+        "id": 89,
+        "indo": "Yang Maha Memberi Kekayaan",
+        "latin": "Al-Mughnî"
+    },
+    {
+        "arab": "الْمَانِعُ",
+        "id": 90,
+        "indo": "Yang Maha Mencegah",
+        "latin": "Al-Mâni`u"
+    },
+    {
+        "arab": "الضَّارُ",
+        "id": 91,
+        "indo": "Yang Maha Memberi Derita",
+        "latin": "Adl-Dlâru"
+    },
+    {
+        "arab": "النَّافِعُ",
+        "id": 92,
+        "indo": "Yang Maha Memberi Manfaat",
+        "latin": "An-Nâfi`u"
+    },
+    {
+        "arab": "النُّوْرُ",
+        "id": 93,
+        "indo": "Yang Maha Bercahaya (Menerangi, Memberi Cahaya)",
+        "latin": "An-Nûru"
+    },
+    {
+        "arab": "الْهَادِيْ",
+        "id": 94,
+        "indo": "Yang Maha Pemberi Petunjuk",
+        "latin": "Al-Hâdî"
+    },
+    {
+        "arab": "الْبَدِيْعُ",
+        "id": 95,
+        "indo": "Yang Maha Pencipta",
+        "latin": "Al-Badî`u"
+    },
+    {
+        "arab": "الْبَاقِيْ",
+        "id": 96,
+        "indo": "Yang Mahakekal",
+        "latin": "Al-Bâqî"
+    },
+    {
+        "arab": "الْوَارِثُ",
+        "id": 97,
+        "indo": "Yang Maha Pewaris",
+        "latin": "Al-Wâritsu"
+    },
+    {
+        "arab": "الرَّشِيْدُ",
+        "id": 98,
+        "indo": "Yang Mahapandai",
+        "latin": "Ar-Rasyîdu"
+    },
+    {
+        "arab": "الصَّبُوْرُ",
+        "id": 99,
+        "indo": "Yang Mahasabar",
+        "latin": "Ash-Shabûru"
+    }
+]
