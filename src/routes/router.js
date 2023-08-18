@@ -1,4 +1,8 @@
 const express = require("express");
+const quran = require("../controllers/quranController");
+const doa = require("../controllers/doaController");
+const dzikir = require("../controllers/dzikirController");
+const hadits = require("../controllers/haditsController");
 const router = express.Router();
 
 router.get((req, res, next) => {
@@ -124,6 +128,34 @@ router.get("/", (req, res) =>
     maintaner: "Otang45",
   })
 );
+router.get("/quran/surah", quran.getAllSurah);
+router.get("/quran/surah/:surahId", quran.getSurah);
+router.get("/quran/juz", quran.getAllJuz);
+router.get("/quran/juz/:juzId", quran.getJuz);
+router.get("/quran/ayah", quran.getAllAyah);
+router.get("/quran/ayah/surah/:surahId", quran.getAyahSurah);
+router.get("/quran/ayah/:surahId/:ayahId", quran.getAyah);
+router.get("/quran/ayah/juz/:juzId", quran.getAyahJuz);
+router.get("/quran/ayah/page/:pageId", quran.getAyahPage);
+router.get("/quran/asbab", quran.getAllAsbab);
+router.get("/quran/asbab/:id", quran.getAsbab);
+router.get("/quran/asma", quran.getAsma);
+router.get("/quran/tafsir", quran.getAllTafsir);
+router.get("/quran/tafsir/:id", quran.getTafsir);
+router.get("/quran/theme", quran.getAllTheme);
+router.get("/quran/theme/:id", quran.getTheme);
+router.get("/quran/word", quran.getAllWord);
+router.get("/quran/word/:surahId/", quran.getWordSurah);
+router.get("/quran/word/:surahId/:ayahId", quran.getWord);
+
+router.get("/doa", doa.getAllDoa);
+router.get("/doa/:source", doa.getDoa);
+
+router.get("/dzikir/:source", dzikir.getDzikir);
+
+router.get("/hadits", hadits.getAllHadits);
+router.get("/hadits/:nomor", hadits.getHadits);
+
 router.all("*", (req, res) =>
   res.status(404).send({
     code: 404,
