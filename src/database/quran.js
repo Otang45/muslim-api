@@ -43,8 +43,9 @@ const getAyah = (surahId, ayahId) => {
 const getAyahJuz = (juzId) => {
   var result = [];
   for (let index = 0; index < ayah.length; index++) {
-    if (ayah[index].juz == juzId) {
-      result.push(ayah[index]);
+    const element = ayah[index];
+    if (element.juz == juzId) {
+      result.push(element);
     }
   }
   return result;

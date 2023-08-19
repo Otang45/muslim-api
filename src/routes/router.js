@@ -43,7 +43,7 @@ router.get("/", (req, res) =>
         },
         spesifikAyat: {
           pattern: "/quran/ayah/{surahId}/{ayahId}",
-          contoh: "/quran/ayah/surah/114/1",
+          contoh: "/quran/ayah/114/1",
         },
         spesifikJuz: {
           pattern: "/quran/ayah/juz/{juzId}",
