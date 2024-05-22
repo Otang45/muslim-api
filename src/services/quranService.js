@@ -21,6 +21,9 @@ const getAyahSurah = (surahId) => {
 const getAyah = (surahId, ayahId) => {
   return quran.getAyah(surahId, ayahId);
 };
+const getAyahRange = (surahId, startId, endId) => {
+  return quran.getAyahRange(surahId, startId, endId);
+};
 const getAyahJuz = (juzId) => {
   return quran.getAyahJuz(juzId);
 };
@@ -65,6 +68,7 @@ module.exports = {
   getJuz,
   getAyahSurah,
   getAyah,
+  getAyahRange,
   getAyahJuz,
   getAllAyah,
   getAyahPage,

@@ -53,6 +53,10 @@ router.get("/", (req, res) =>
           pattern: "/quran/ayah/page/{pageId}",
           contoh: "/quran/ayah/page/604",
         },
+        ayatRange: {
+          pattern: "/quran/ayah/{surahId}/{start}-{end}",
+          contoh: "/quran/ayah/114/1-3",
+        },
       },
       asbabNujul: {
         semua: {
@@ -130,6 +134,7 @@ router.get("/quran/juz/:juzId", quran.getJuz);
 router.get("/quran/ayah", quran.getAllAyah);
 router.get("/quran/ayah/surah/:surahId", quran.getAyahSurah);
 router.get("/quran/ayah/:surahId/:ayahId", quran.getAyah);
+router.get("/quran/ayah/:surahId/:startId-:endId", quran.getAyahRange);
 router.get("/quran/ayah/juz/:juzId", quran.getAyahJuz);
 router.get("/quran/ayah/page/:pageId", quran.getAyahPage);
 router.get("/quran/asbab", quran.getAllAsbab);

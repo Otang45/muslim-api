@@ -46,6 +46,7 @@ Fitur utama:
 |`/quran/ayah`|[/quran/ayah](https://api.dikiotang.com/quran/ayah)|Semua Ayat|
 |`/quran/ayah/surah/{surahId}`|[/quran/ayah/surah/114](https://api.dikiotang.com/quran/ayah/surah/114)|Daftar Ayat berdasarkan Surah|
 |`/quran/ayah/{surahId}/{ayahId}`|[/quran/ayah/114/1](https://api.dikiotang.com/quran/ayah/114/1)|Spesifik Ayat berdasarkan Surah|
+|`/quran/ayah/{surahId}/{start}-{end}`|[/quran/ayah/114/1-3](https://api.dikiotang.com/quran/ayah/114/1-3)|Range Ayat berdasarkan Surah|
 |`/quran/ayah/juz/{juzId}`|[/quran/ayah/juz/30](https://api.dikiotang.com/quran/ayah/juz/30)|Daftar Ayat berdasarkan Juz|
 |`/quran/ayah/page/{pageId}`|[/quran/ayah/page/604](https://api.dikiotang.com/quran/ayah/page/604)|Daftar Ayat berdasarkan Halaman|
 |`/quran/asbab`|[/quran/asbab](https://api.dikiotang.com/quran/asbab)|Daftar Asbab Nujul|

@@ -25,6 +25,10 @@ const getAyah = (req, res) => {
   const { surahId, ayahId } = req.params;
   res.send({ data: quranService.getAyah(surahId, ayahId) });
 };
+const getAyahRange = (req, res) => {
+  const { surahId, startId, endId } = req.params;
+  res.send({ data: quranService.getAyahRange(surahId, startId, endId) });
+};
 const getAyahJuz = (req, res) => {
   const { juzId } = req.params;
   res.send({ data: quranService.getAyahJuz(juzId) });
@@ -76,6 +80,7 @@ module.exports = {
   getJuz,
   getAyahSurah,
   getAyah,
+  getAyahRange,
   getAyahJuz,
   getAllAyah,
   getAyahPage,

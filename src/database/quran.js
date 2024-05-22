@@ -40,6 +40,15 @@ const getAyah = (surahId, ayahId) => {
   }
   return result;
 };
+const getAyahRange = (surahId, startId, endId) => {
+  var result = [];
+  for (let index = 0; index < ayah.length; index++) {
+    if (ayah[index].surah == surahId) {
+      result.push(ayah[index]);
+    }
+  }
+  return result.slice(startId - 1, endId - 1);
+};
 const getAyahJuz = (juzId) => {
   var result = [];
   for (let index = 0; index < ayah.length; index++) {
@@ -129,6 +138,7 @@ module.exports = {
   getJuz,
   getAyahSurah,
   getAyah,
+  getAyahRange,
   getAyahJuz,
   getAllAyah,
   getAyahPage,
