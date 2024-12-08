@@ -1,0 +1,1058 @@
+<section id="data" class="section data">
+  <div class="title-content">
+    <h2>Muslim Api</h2>
+    <p>
+      Rest Api ini menyediakan Al-Quran Indonesia, Kumpulan doa, Dzikir harian,
+      dan Hadits arba'in. dari bebrapa sumber.
+    </p>
+    <ul>
+      <li>
+        Al-Quran : Daftra Surah, daftar Juz, perhalaman, asbab nujul, asmaul
+        husna, tafsir kemenag, kata per kata.
+        <a href="https://quran.kemenag.go.id/"><b>Quran Kemenag</b></a>
+      </li>
+      <li>
+        Doa-doa : kumpulan doa-doa pilihan dari buku
+        <a
+          href="https://jatim.kemenag.go.id/file/file/kumpulanbukuelektronik/pgdx1436850980.pdf"
+          ><b>Kumpulan doa sehari hari</b></a
+        >
+      </li>
+      <li>Dzikir : Bacaan dzikir pagi, petang, dan sesudah solat.</li>
+      <li>
+        Hadits : Kumpulan hadits dari
+        <a href="https://haditsarbain.com/"><b>Hadits Arba'in</b></a>
+      </li>
+      <li>Audio Murottal : Audio murottal Shaykh Mishari Alafasy</li>
+    </ul>
+  </div>
+</section>
+
+<section id="api" class="api section">
+  <h2>Quran</h2>
+  <br />
+  <!-- Asbab Nuzul -->
+  <h3>Asbabun Nuzul</h3>
+  <h5>Request</h5>
+  <div class="method">
+    <p class="title">Semua (-+460 KB)</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/quran/asbab</p>
+    </div>
+  </div>
+  <div class="method">
+    <p class="title">Spesifik</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/quran/asbab?id={asbabId}</p>
+    </div>
+  </div>
+  <h5>Contoh</h5>
+  <div class="example">
+    <p>
+      GET /v1/quran/asbab
+      <a data-toggle="collapse" href="#collapse1">Response</a>
+    </p>
+    <div id="collapse1" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f1fbb6b033a11841d0b33",
+      "ayah": "83",
+      "id": "2",
+      "text": "Sebagian kaum Yahudi menyatakan pengakuan mereka atas kenabian Nabi Muhammad di hadapan kaum mukmin. Hal ini membuat kawan-kawan mereka dari kalangan rahib kesal dan menegur mereka untuk tidak mengulanginya lagi. Itulah peristiwa yang melatarbelakangi turunnya ayat tersebut. Menjelaskan firman Allah, wa’iżā laqul-lażīna āmanū qālū āmannā, Ibnu ‘Abbās berkata, “Kaum Yahudi berkata, ‘Kami percaya sahabat kalian adalah benar utusan Allah, akan tetapi ia diutus hanya untuk kalian—bukan untuk kami.’ Begitu mereka berjumpa dengan kaum Yahudi yang lain, mereka pun menegur, ‘Jangan kalian bicarakan masalah ini (kerasulan Muhammad) kepada orang Arab karena dulu kalian meminta kemenangan (atas mereka) kepada Allah dengan wasilah kerasulan Muhammad, lalu kini kita tahu ternyata ia bagian dari mereka.’” (Hasan; riwayat aṭ-Ṭabariy)."
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>
+      GET /v1/quran/asbab?id=1
+      <a data-toggle="collapse" href="#collapse2">Response</a>
+    </p>
+    <div id="collapse2" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": {
+    "_id": "664f1fbb6b033a11841d0b32",
+    "ayah": "69",
+    "id": "1",
+    "text": "Ayat ini turun untuk menjawab pertanyaan Salmān al-Fārisiy tentang nasib kaum Nasrani yang tulus beriman kepada Allah dan meninggal sebelum diutusnya Nabi Muhammad ṣallallāhu ‘alaihi wasallam.Menjelaskan sebab nuzul firman Allah, innallażīna āmanū wallażīna hādū ... hingga akhir ayat, Mujāhid berkata, “Salmān al-Fārisiy bertanya kepada Nabi ṣallallāhu ‘alaihi wasallam perihal kaum Nasrani dan bagaimana pendapat beliau tentang amal mereka. Nabi bersabda, ‘Mereka meninggal dalam keadaan tidak beragama Islam (yakni: patuh dan tunduk kepada Allah dengan cara menauhidkan, menaati, dan membebaskan diri dari kemusyrikan).’ Dengan sedih Salmān berkata, ‘Jika demikian, sungguh bumi terasa gelap bagiku; aku ingat betul bagaimana kesungguhan mere-ka (dalam beribadah).’ Berkaitan dengan hal ini turunlah ayat, innallażīna āmanū wallażīna hādū. Rasulullah lalu memanggil Salmān dan bersabda, ‘Ayat ini turun terkait teman-temanmu.’ Beliau juga bersabda, ‘Siapa saja yang wafat dalam keadaan memegang teguh agama Nabi Isa dan agama Islam sebelum ia mendengar dakwahku, ia berada di atas kebaikan. Sebaliknya, siapa saja yang hari ini mendengar (dakwahku) tetapi enggan beriman kepadaku, sungguh ia telah celaka.’” (Hasan; riwayat Ibnu Jarīr aṭ-Ṭabariy)."
+  }
+}
+      </pre>
+    </div>
+    <p>Host: muslim-api-three.vercel.app</p>
+    <p>Accept: */*</p>
+    <p>Content-Type: application/json</p>
+  </div>
+  <!-- Asmaul Husna --><br />
+  <h3>Asmaul Husna</h3>
+  <h5>Request</h5>
+  <div class="method">
+    <p class="title">Semua (-+11 KB)</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/quran/asma</p>
+    </div>
+  </div>
+  <h5>Contoh</h5>
+  <div class="example">
+    <p>
+      GET /v1/quran/asma
+      <a data-toggle="collapse" href="#collapse3">Response</a>
+    </p>
+    <div id="collapse3" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f208e6b033a11841e2641",
+      "arab": "الرَّحْمـٰنُ",
+      "id": 1,
+      "indo": "Yang Maha Pengasih",
+      "latin": "Ar-Rahmânu"
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>Host: muslim-api-three.vercel.app</p>
+    <p>Accept: */*</p>
+    <p>Content-Type: application/json</p>
+  </div>
+  <!-- Ayat -->
+  <br />
+  <h3>Ayat</h3>
+  <h5>Request</h5>
+  <div class="method">
+    <p class="title">Semua (-+4 MB)</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/quran/ayah</p>
+    </div>
+  </div>
+  <div class="method">
+    <p class="title">Berdasarkan Surah</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/quran/ayah/surah?id={surahId}</p>
+    </div>
+  </div>
+  <div class="method">
+    <p class="title">Berdasarkan Juz</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/quran/ayah/juz?id={juzId}</p>
+    </div>
+  </div>
+  <div class="method">
+    <p class="title">Berdasarkan Halaman</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/quran/ayah/page?id={halamanId}</p>
+    </div>
+  </div>
+  <div class="method">
+    <p class="title">Spesifik Ayat</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/quran/ayah/specific?surahId={surahId}&ayahId={ayahId}</p>
+    </div>
+  </div>
+  <div class="method">
+    <p class="title">Jangkauan Ayat</p>
+    <div class="request">
+      <span>GET</span>
+      <p>
+        /v1/quran/ayah/range?surahId={surahId}&start={startAyah}&end={endAyah}
+      </p>
+    </div>
+  </div>
+  <div class="method">
+    <p class="title">Cari Ayat Berdasar Terjemah</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/quran/ayah/find?query={word}</p>
+    </div>
+  </div>
+  <p class="footer">
+    *note: Untuk mengambil semua ayat memerlukan waktu karena data berukuran
+    besar.
+  </p>
+  <h5>Contoh</h5>
+  <div class="example">
+    <p>
+      GET /v1/quran/ayah
+      <a data-toggle="collapse" href="#collapse4">Response</a>
+    </p>
+    <div id="collapse4" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f26ea6b033a118427cb4c",
+      "arab": "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ",
+      "asbab": "0",
+      "audio": "https://cdn.alquran.cloud/media/audio/ayah/ar.alafasy/1",
+      "ayah": "1",
+      "hizb": null,
+      "id": "1",
+      "juz": "1",
+      "latin": "Bismillāhir-raḥmānir-raḥīm(i). ",
+      "notes": null,
+      "page": "1",
+      "surah": "1",
+      "text": "Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang.",
+      "theme": null
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>
+      GET /v1/quran/ayah/surah?id=1
+      <a data-toggle="collapse" href="#collapse5">Response</a>
+    </p>
+    <div id="collapse5" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f26ea6b033a118427cb4c",
+      "arab": "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ",
+      "asbab": "0",
+      "audio": "https://cdn.alquran.cloud/media/audio/ayah/ar.alafasy/1",
+      "ayah": "1",
+      "hizb": null,
+      "id": "1",
+      "juz": "1",
+      "latin": "Bismillāhir-raḥmānir-raḥīm(i). ",
+      "notes": null,
+      "page": "1",
+      "surah": "1",
+      "text": "Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang.",
+      "theme": null
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>
+      GET /v1/quran/ayah/juz?id=1
+      <a data-toggle="collapse" href="#collapse6">Response</a>
+    </p>
+    <div id="collapse6" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f26ea6b033a118427cb4c",
+      "arab": "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ",
+      "asbab": "0",
+      "audio": "https://cdn.alquran.cloud/media/audio/ayah/ar.alafasy/1",
+      "ayah": "1",
+      "hizb": null,
+      "id": "1",
+      "juz": "1",
+      "latin": "Bismillāhir-raḥmānir-raḥīm(i). ",
+      "notes": null,
+      "page": "1",
+      "surah": "1",
+      "text": "Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang.",
+      "theme": null
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>
+      GET /v1/quran/ayah/page?id=1
+      <a data-toggle="collapse" href="#collapse7">Response</a>
+    </p>
+    <div id="collapse7" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f26ea6b033a118427cb4c",
+      "arab": "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ",
+      "asbab": "0",
+      "audio": "https://cdn.alquran.cloud/media/audio/ayah/ar.alafasy/1",
+      "ayah": "1",
+      "hizb": null,
+      "id": "1",
+      "juz": "1",
+      "latin": "Bismillāhir-raḥmānir-raḥīm(i). ",
+      "notes": null,
+      "page": "1",
+      "surah": "1",
+      "text": "Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang.",
+      "theme": null
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>
+      GET /v1/quran/ayah/specific?surahId=1&ayahId=1
+      <a data-toggle="collapse" href="#collapse8">Response</a>
+    </p>
+    <div id="collapse8" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f26ea6b033a118427cb4c",
+      "arab": "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ",
+      "asbab": "0",
+      "audio": "https://cdn.alquran.cloud/media/audio/ayah/ar.alafasy/1",
+      "ayah": "1",
+      "hizb": null,
+      "id": "1",
+      "juz": "1",
+      "latin": "Bismillāhir-raḥmānir-raḥīm(i). ",
+      "notes": null,
+      "page": "1",
+      "surah": "1",
+      "text": "Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang.",
+      "theme": null
+    }
+  ]
+}
+      </pre>
+    </div>
+    <p>
+      GET /v1/quran/ayah/range?surahId=1&start=2&end=5
+      <a data-toggle="collapse" href="#collapse9">Response</a>
+    </p>
+    <div id="collapse9" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f26ea6b033a118427cb4d",
+      "arab": "اَلْحَمْدُ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ",
+      "asbab": "0",
+      "audio": "https://cdn.alquran.cloud/media/audio/ayah/ar.alafasy/2",
+      "ayah": "2",
+      "hizb": null,
+      "id": "2",
+      "juz": "1",
+      "latin": "Al-ḥamdu lillāhi rabbil-‘ālamīn(a). ",
+      "notes": "1) Allah Swt. disebut rabb (Tuhan) seluruh alam karena Dialah yang telah menciptakan, memelihara, mendidik, mengatur, mengurus, memberi rezeki, dan sebagainya kepada semua makhluk-Nya.",
+      "page": "1",
+      "surah": "1",
+      "text": "Segala puji bagi Allah, Tuhan1) semesta alam",
+      "theme": null
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>
+      GET /v1/quran/ayah/find?query=Datar
+      <a data-toggle="collapse" href="#collapse10">Response</a>
+    </p>
+    <div id="collapse10" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f26ea6b033a118427cc60",
+      "arab": "وَمَثَلُ الَّذِيْنَ يُنْفِقُوْنَ اَمْوَالَهُمُ ابْتِغَاۤءَ مَرْضَاتِ اللّٰهِ وَتَثْبِيْتًا مِّنْ اَنْفُسِهِمْ كَمَثَلِ جَنَّةٍۢ بِرَبْوَةٍ اَصَابَهَا وَابِلٌ فَاٰتَتْ اُكُلَهَا ضِعْفَيْنِۚ فَاِنْ لَّمْ يُصِبْهَا وَابِلٌ فَطَلٌّ  ۗوَاللّٰهُ بِمَا تَعْمَلُوْنَ بَصِيْرٌ",
+      "asbab": "0",
+      "audio": "https://cdn.alquran.cloud/media/audio/ayah/ar.alafasy/272",
+      "ayah": "265",
+      "hizb": "5.25",
+      "id": "272",
+      "juz": "3",
+      "latin": "Wa maṡalul-lażīna yunfiqūna amwālahumubtigā'a marḍātillāhi wa taṡbītam min anfusihim kamaṡali jannatim birabwatin aṣābahā wābilun fa'ātat ukulahā ḍi‘fain(i), fa'illam yuṣibhā wābilun faṭall(un), wallāhu bimā ta‘malūna baṣīr(un).  ",
+      "notes": "82) Diumpamakan dengan dataran tinggi karena dataran tinggi yang lebih dingin berpotensi mendapatkan awan hujan lebih banyak daripada dataran rendah sehingga tanamannya lebih subur. Kalaupun tidak ada hujan lebat, gerimis pun cukup untuk membasahi tanahnya.",
+      "page": "45",
+      "surah": "2",
+      "text": "Perumpamaan orang-orang yang menginfakkan harta mereka untuk mencari rida Allah dan memperteguh jiwa mereka adalah seperti sebuah kebun di dataran tinggi yang disiram oleh hujan lebat, lalu ia (kebun itu) menghasilkan buah-buahan dua kali lipat. Jika hujan lebat tidak menyiraminya, hujan gerimis (pun memadai).82) Allah Maha Melihat apa yang kamu kerjakan.",
+      "theme": "83"
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>Host: muslim-api-three.vercel.app</p>
+    <p>Accept: */*</p>
+    <p>Content-Type: application/json</p>
+  </div>
+  <!-- Juz -->
+  <h3>Daftar Juz</h3>
+  <h5>Request</h5>
+  <div class="method">
+    <p class="title">Semua (-+28 KB)</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/quran/juz</p>
+    </div>
+  </div>
+  <div class="method">
+    <p class="title">Spesifik</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/quran/juz?id={juzId}</p>
+    </div>
+  </div>
+  <h5>Contoh</h5>
+  <div class="example">
+    <p>
+      GET /v1/quran/juz
+      <a data-toggle="collapse" href="#collapse11">Response</a>
+    </p>
+    <div id="collapse11" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f21f66b033a1184200530",
+      "ayat_arab": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+      "ayat_indo": "Dengan nama Allah Yang Maha Pengasih, Maha Penyayang.",
+      "ayat_latin": "Bismillaahir Rahmaanir Raheem",
+      "name": "Juz 1",
+      "name_end_arab": "البقرة",
+      "name_end_id": "Al-Baqarah",
+      "name_start_arab": "الفاتحة",
+      "name_start_id": "Al-Fatihah",
+      "number": "1",
+      "surah_id_end": "2",
+      "surah_id_start": "1",
+      "verse_end": "141",
+      "verse_start": "1"
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>
+      GET /v1/quran/juz?id=1
+      <a data-toggle="collapse" href="#collapse12">Response</a>
+    </p>
+    <div id="collapse12" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": {
+    "_id": "664f21f66b033a1184200530",
+    "ayat_arab": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+    "ayat_indo": "Dengan nama Allah Yang Maha Pengasih, Maha Penyayang.",
+    "ayat_latin": "Bismillaahir Rahmaanir Raheem",
+    "name": "Juz 1",
+    "name_end_arab": "البقرة",
+    "name_end_id": "Al-Baqarah",
+    "name_start_arab": "الفاتحة",
+    "name_start_id": "Al-Fatihah",
+    "number": "1",
+    "surah_id_end": "2",
+    "surah_id_start": "1",
+    "verse_end": "141",
+    "verse_start": "1"
+  }
+}
+      </pre>
+    </div>
+    <p>Host: muslim-api-three.vercel.app</p>
+    <p>Accept: */*</p>
+    <p>Content-Type: application/json</p>
+  </div>
+  <!-- Surah -->
+  <h3>Daftar Surah</h3>
+  <h5>Request</h5>
+  <div class="method">
+    <p class="title">Semua (-+100 KB)</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/quran/surah</p>
+    </div>
+  </div>
+  <div class="method">
+    <p class="title">Spesifik</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/quran/surah?id={surahId}</p>
+    </div>
+  </div>
+  <h5>Contoh</h5>
+  <div class="example">
+    <p>
+      GET /v1/quran/surah
+      <a data-toggle="collapse" href="#collapse13">Response</a>
+    </p>
+    <div id="collapse13" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f221f6b033a1184203c35",
+      "audio_url": "https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/001.mp3",
+      "name_en": "Al-Faatiha",
+      "name_id": "Al-Fatihah",
+      "name_long": "سُورَةُ ٱلْفَاتِحَةِ",
+      "name_short": "الفاتحة",
+      "number": "1",
+      "number_of_verses": "7",
+      "revelation": "مكة",
+      "revelation_en": "Meccan",
+      "revelation_id": "Makkiyyah",
+      "sequence": "5",
+      "tafsir": "Surat Al Faatihah (Pembukaan) yang diturunkan di Mekah dan terdiri dari 7 ayat adalah surat yang pertama-tama diturunkan dengan lengkap  diantara surat-surat yang ada dalam Al Quran dan termasuk golongan surat Makkiyyah. Surat ini disebut Al Faatihah (Pembukaan), karena dengan surat inilah dibuka dan dimulainya Al Quran. Dinamakan Ummul Quran (induk Al Quran) atau Ummul Kitaab (induk Al Kitaab) karena dia merupakan induk dari semua isi Al Quran, dan karena itu diwajibkan membacanya pada tiap-tiap sembahyang. Dinamakan pula As Sab'ul matsaany (tujuh yang berulang-ulang) karena ayatnya tujuh dan dibaca berulang-ulang dalam sholat.",
+      "translation_en": "The Opening",
+      "translation_id": "Pembukaan"
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>
+      GET /v1/quran/surah?id=1
+      <a data-toggle="collapse" href="#collapse14">Response</a>
+    </p>
+    <div id="collapse14" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": {
+    "_id": "664f221f6b033a1184203c35",
+    "audio_url": "https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/001.mp3",
+    "name_en": "Al-Faatiha",
+    "name_id": "Al-Fatihah",
+    "name_long": "سُورَةُ ٱلْفَاتِحَةِ",
+    "name_short": "الفاتحة",
+    "number": "1",
+    "number_of_verses": "7",
+    "revelation": "مكة",
+    "revelation_en": "Meccan",
+    "revelation_id": "Makkiyyah",
+    "sequence": "5",
+    "tafsir": "Surat Al Faatihah (Pembukaan) yang diturunkan di Mekah dan terdiri dari 7 ayat adalah surat yang pertama-tama diturunkan dengan lengkap  diantara surat-surat yang ada dalam Al Quran dan termasuk golongan surat Makkiyyah. Surat ini disebut Al Faatihah (Pembukaan), karena dengan surat inilah dibuka dan dimulainya Al Quran. Dinamakan Ummul Quran (induk Al Quran) atau Ummul Kitaab (induk Al Kitaab) karena dia merupakan induk dari semua isi Al Quran, dan karena itu diwajibkan membacanya pada tiap-tiap sembahyang. Dinamakan pula As Sab'ul matsaany (tujuh yang berulang-ulang) karena ayatnya tujuh dan dibaca berulang-ulang dalam sholat.",
+    "translation_en": "The Opening",
+    "translation_id": "Pembukaan"
+  }
+}
+      </pre>
+    </div>
+    <p>Host: muslim-api-three.vercel.app</p>
+    <p>Accept: */*</p>
+    <p>Content-Type: application/json</p>
+  </div>
+  <!-- Tafsir -->
+  <h3>Daftar Tafsir</h3>
+  <h5>Request</h5>
+  <div class="method">
+    <p class="title">Semua (-+13 MB)</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/quran/tafsir</p>
+    </div>
+  </div>
+  <div class="method">
+    <p class="title">Spesifik</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/quran/tafsir?id={tafsirId}</p>
+    </div>
+  </div>
+  <p class="footer">
+    *note: Untuk mengambil semua tafsir memerlukan waktu karena data berukuran
+    besar.
+  </p>
+  <h5>Contoh</h5>
+  <div class="example">
+    <p>
+      GET /v1/quran/tafsir
+      <a data-toggle="collapse" href="#collapse15">Response</a>
+    </p>
+    <div id="collapse15" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f2d883efa9894acbef597",
+      "ayah": "1",
+      "id": "1",
+      "tahlili": "(1) Surah al-Fātiḥah dimulai dengan Basmalah (بسم الله الرحمن الرحيم).\nAda beberapa pendapat ulama berkenaan dengan Basmalah yang terdapat pada permulaan surah Al-Fātiḥah. Di antara pendapat-pendapat itu, yang termasyhur ialah:\n1. Basmalah adalah ayat tersendiri, diturunkan Allah untuk jadi kepala masing-masing surah, dan pembatas antara satu surah dengan surah yang lain. Jadi dia bukanlah satu ayat dari al-Fātiḥah atau dari surah yang lain, yang dimulai dengan Basmalah itu. Ini pendapat Imam Malik beserta ahli qiraah dan fuqaha (ahli fikih) Medinah, Basrah dan Syam, dan juga pendapat Imam Abu Hanifah dan pengikut-pengikutnya. Sebab itu menurut Imam Abu Hanifah, Basmalah itu tidak dikeraskan membacanya dalam salat, bahkan Imam Malik tidak membaca Basmalah sama sekali.\nHadis Nabi saw:\nعَنْ أَنَسِ بْنِ مَالِكٍ قَالَ: صَلَّيْتُ خَلْفَ النَّبِيِّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ وَأَبِي بَكْرٍوَعُمَرَوَعُثْمَانَ فَكَانُوْا يَسْتَفْتِحُوْنَ بِالْحَمْدِ ِللهِ رَبِّ الْعَالَمِيْنَ لاَ يَذْكُرُوْنَ بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِِ فِي أَوَّلِ قِرَاءَةٍ وَلاَ فِي آخِرِهَا (رواه الشيخان واللفظ لمسلم);Dari Anas bin Malik, dia berkata, “Saya salat di belakang Nabi saw, Abu Bakar, Umar dan Usman. Mereka memulai dengan al-ḥamdulillāhi rabbil ‘ālamīn, tidak menyebut Bismillāhirraḥmānirrahīm di awal bacaan, dan tidak pula di akhirnya.”(Riwayat al-Bukhārī dan Muslim).;2. Basmalah adalah salah satu ayat dari al-Fātiḥah, dan pada surah an-Naml/27:30, انه من سليمن وانه بسم الله الرحمن الرحيم (النمل/27:30) yang dimulai dengan Basmalah. Ini adalah pendapat Imam Syafi'i beserta ahli qiraah Mekah dan Kufah. Sebab itu menurut mereka Basmalah itu dibaca dengan suara keras dalam salat (jahar). Dalil-dalil yang menunjukkan hal itu antara lain Hadis Nabi saw:\nعَنْ ابن عباس قال: كانَ رَسُوْلُ اللهِ صَلَّى الله ُعَلَيْهِ وَسَلَّمَ يَجْهَرُ ِببِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِِ (رواه الحاكم فى المستدرك وقال صحيح) \nDari Ibnu ‘Abbās, ia berkata, Rasulullah saw mengeraskan bacaan Bismillāhirrahmānirrahīm. (Riwayat al-Ḥākim dalam al-Mustadrak dan menurutnya, hadis ini sahih);عَنْ اُمِّ سَلَمَةَ قَالَتْ كَانَ رَسُوْلُ اللهِ صَلَّى الله ُعَلَيْهِ وَسَلَّمَ يُقَطِّعُ قِرَأَتَهُ بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِِ، اَلْحَمْدُ ِللهِ رَبِّ اْلعَالَمِيْنَ، الرَّحْمٰنِ الرَّحِيْمِِ، مَالِكِ يَوْمِ الدِّيْنِ (رواه أحمد وابوداود وابن خزيمة والحاكم وقال الدار قطنى سنده صحيح)\nDari Ummu Salamah, katanya, Rasulullah saw berhenti berkali-kali dalam bacaanya Bismillāhirrahmānirrahīm, al-Ḥamdulillāhi Rabbil- ‘Ālamīn, ar-Raḥmānir-raḥīm, Māliki Yaumid-dīn. (Riwayat Aḥmad, Abu Dāud, Ibnu Khuzaimah dan al-Ḥākim. Menurut ad-Dāruquṭnī, sanad hadis ini sahih).;  Abu Hurairah juga salat dan mengeraskan bacaan basmalah. Setelah selesai salat, dia berkata, “Saya ini adalah orang yang salatnya paling mirip dengan Rasulullah.” Muawiyah juga pernah salat di Medinah tanpa mengeraskan suara basmalah. Ia diprotes oleh para sahabat lain yang hadir disitu. Akhirnya pada salat berikutnya Muawiyah mengeraskan bacaan basmalah. \nKalau kita perhatikan bahwa sahabat-sahabat Rasulullah saw telah sependapat menuliskan Basmalah pada permulaan surah dari surah Al-Qur′an, kecuali surah at-Taubah (karena memang dari semula turunnya tidak dimulai dengan Basmalah) dan bahwa Rasulullah saw melarang menuliskan sesuatu yang bukan Al-Qur′an agar tidak bercampur aduk dengan Al-Qur′an, sehingga mereka tidak menuliskan ‘āmīn’ pada akhir surah al-Fātiḥah, maka Basmalah itu adalah salah satu ayat dari Al-Qur′an. Dengan kata lain, bahwa “basmalah-basmalah” yang terdapat di dalam Al-Qur′an adalah ayat-ayat Al-Qur′an, lepas dari pendapat apakah satu ayat dari al-Fātiḥah atau dari surah lain, yang dimulai dengan Basmalah atau tidak.\nSebagaimana disebutkan di atas bahwa surah al-Fātiḥah itu terdiri dari tujuh ayat. Mereka yang berpendapat bahwa Basmalah itu tidak termasuk satu ayat dari al-Fātiḥah, memandang:\nغَيْرِ الْمَغْضُوْبِ عَلَيْهِمْ وَلَا الضَّاۤلِّيْنَ ࣖ  \nadalah salah satu ayat, dengan demikian ayat-ayat al-Fātiḥah itu tetap tujuh.\nبِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ \n“Dengan nama Allah” maksudnya “Dengan nama Allah saya baca atau saya mulai”. Seakan-akan Nabi berkata, “Saya baca surah ini dengan menyebut nama Allah, bukan dengan menyebut nama saya sendiri, sebab ia wahyu dari Tuhan, bukan dari saya sendiri.” Maka Basmalah di sini mengandung arti bahwa Al-Qur′an itu wahyu dari Allah, bukan karangan Muhammad saw dan Muhammad itu hanyalah seorang Pesuruh Allah yang dapat perintah menyampaikan Al-Qur′an kepada manusia.;Makna kata Allāh \nAllah adalah nama bagi Zat yang ada dengan sendirinya (wājibul-wujūd). Kata “Allah” hanya dipakai oleh bangsa Arab kepada Tuhan yang sebenarnya, yang berhak disembah, yang mempunyai sifat-sifat kesempurnaan. Mereka tidak memakai kata itu untuk tuhan-tuhan atau dewa-dewa mereka yang lain. \n \nHikmah Membaca Basmalah\nSeorang yang selalu membaca Basmalah sebelum melakukan pekerjaan yang penting, berarti ia selalu mengingat Allah pada setiap pekerjaannya. Dengan demikian ia akan melakukan pekerjaan tersebut dengan selalu memperhatikan norma-norma Allah dan tidak merugikan orang lain. Dampaknya, pekerjaan yang dilakukannya akan berbuah sebagai amalan ukhrawi. \nSeorang Muslim diperintahkan membaca Basmalah pada waktu mengerjakan sesuatu yang baik. Yang demikian itu untuk mengingatkan bahwa sesuatu yang dikerjakan adalah karena perintah Allah, atau karena telah diizinkan-Nya. Maka karena Allah dia mengerjakan pekerjaan itu dan kepada-Nya dia meminta pertolongan agar pekerjaan terlaksana dengan baik dan berhasil.\nNabi saw bersabda:\nكُلُّ أَمْرٍ ذِيْ بَالٍ لَمْ يُبْدَأْ فِيْهِ بِبِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ أَقْطَعُ (رواه عبد القادر الرهاوي)\n“Setiap pekerjaan penting yang tidak dimulai dengan menyebut Basmalah adalah buntung (kurang berkahnya).” (Riwayat Abdul-Qādir ar-Rahāwī).;Orang Arab sebelum datang Islam mengerjakan sesuatu dengan menyebut al-Lāta dan al-‘Uzzā, nama-nama berhala mereka. Sebab itu, Allah mengajarkan kepada penganut-penganut agama Islam yang telah mengesakan-Nya, agar mereka mengerjakan sesuatu dengan menyebut nama Allah.",
+      "wajiz": "Aku memulai bacaan Al-Qur'an dengan menyebut nama Allah, nama teragung bagi satu-satunya Tuhan yang patut disembah, yang memiliki seluruh sifat kesempurnaan dan tersucikan dari segala bentuk kekurangan, Yang Maha Pengasih, Pemilik dan sumber sifat kasih Yang menganugerahkan segala macam karunia, baik besar maupun kecil, kepada seluruh makhluk, Maha Penyayang Yang tiada henti memberi kasih dan kebaikan kepada orang-orang yang beriman. Memulai setiap pekerjaan dengan menyebut nama Allah (basmalah) akan mendatangkan keberkahan, dan dengan mengingat Allah dalam setiap pekerjaan, seseorang akan memiliki kekuatan spiritual untuk melakukan yang terbaik dan menghindar dari keburukan."
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>
+      GET /v1/quran/tafsir?id=1
+      <a data-toggle="collapse" href="#collapse16">Response</a>
+    </p>
+    <div id="collapse16" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": {
+    "_id": "664f2d883efa9894acbef597",
+    "ayah": "1",
+    "id": "1",
+    "tahlili": "(1) Surah al-Fātiḥah dimulai dengan Basmalah (بسم الله الرحمن الرحيم).\nAda beberapa pendapat ulama berkenaan dengan Basmalah yang terdapat pada permulaan surah Al-Fātiḥah. Di antara pendapat-pendapat itu, yang termasyhur ialah:\n1. Basmalah adalah ayat tersendiri, diturunkan Allah untuk jadi kepala masing-masing surah, dan pembatas antara satu surah dengan surah yang lain. Jadi dia bukanlah satu ayat dari al-Fātiḥah atau dari surah yang lain, yang dimulai dengan Basmalah itu. Ini pendapat Imam Malik beserta ahli qiraah dan fuqaha (ahli fikih) Medinah, Basrah dan Syam, dan juga pendapat Imam Abu Hanifah dan pengikut-pengikutnya. Sebab itu menurut Imam Abu Hanifah, Basmalah itu tidak dikeraskan membacanya dalam salat, bahkan Imam Malik tidak membaca Basmalah sama sekali.\nHadis Nabi saw:\nعَنْ أَنَسِ بْنِ مَالِكٍ قَالَ: صَلَّيْتُ خَلْفَ النَّبِيِّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ وَأَبِي بَكْرٍوَعُمَرَوَعُثْمَانَ فَكَانُوْا يَسْتَفْتِحُوْنَ بِالْحَمْدِ ِللهِ رَبِّ الْعَالَمِيْنَ لاَ يَذْكُرُوْنَ بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِِ فِي أَوَّلِ قِرَاءَةٍ وَلاَ فِي آخِرِهَا (رواه الشيخان واللفظ لمسلم);Dari Anas bin Malik, dia berkata, “Saya salat di belakang Nabi saw, Abu Bakar, Umar dan Usman. Mereka memulai dengan al-ḥamdulillāhi rabbil ‘ālamīn, tidak menyebut Bismillāhirraḥmānirrahīm di awal bacaan, dan tidak pula di akhirnya.”(Riwayat al-Bukhārī dan Muslim).;2. Basmalah adalah salah satu ayat dari al-Fātiḥah, dan pada surah an-Naml/27:30, انه من سليمن وانه بسم الله الرحمن الرحيم (النمل/27:30) yang dimulai dengan Basmalah. Ini adalah pendapat Imam Syafi'i beserta ahli qiraah Mekah dan Kufah. Sebab itu menurut mereka Basmalah itu dibaca dengan suara keras dalam salat (jahar). Dalil-dalil yang menunjukkan hal itu antara lain Hadis Nabi saw:\nعَنْ ابن عباس قال: كانَ رَسُوْلُ اللهِ صَلَّى الله ُعَلَيْهِ وَسَلَّمَ يَجْهَرُ ِببِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِِ (رواه الحاكم فى المستدرك وقال صحيح) \nDari Ibnu ‘Abbās, ia berkata, Rasulullah saw mengeraskan bacaan Bismillāhirrahmānirrahīm. (Riwayat al-Ḥākim dalam al-Mustadrak dan menurutnya, hadis ini sahih);عَنْ اُمِّ سَلَمَةَ قَالَتْ كَانَ رَسُوْلُ اللهِ صَلَّى الله ُعَلَيْهِ وَسَلَّمَ يُقَطِّعُ قِرَأَتَهُ بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِِ، اَلْحَمْدُ ِللهِ رَبِّ اْلعَالَمِيْنَ، الرَّحْمٰنِ الرَّحِيْمِِ، مَالِكِ يَوْمِ الدِّيْنِ (رواه أحمد وابوداود وابن خزيمة والحاكم وقال الدار قطنى سنده صحيح)\nDari Ummu Salamah, katanya, Rasulullah saw berhenti berkali-kali dalam bacaanya Bismillāhirrahmānirrahīm, al-Ḥamdulillāhi Rabbil- ‘Ālamīn, ar-Raḥmānir-raḥīm, Māliki Yaumid-dīn. (Riwayat Aḥmad, Abu Dāud, Ibnu Khuzaimah dan al-Ḥākim. Menurut ad-Dāruquṭnī, sanad hadis ini sahih).;  Abu Hurairah juga salat dan mengeraskan bacaan basmalah. Setelah selesai salat, dia berkata, “Saya ini adalah orang yang salatnya paling mirip dengan Rasulullah.” Muawiyah juga pernah salat di Medinah tanpa mengeraskan suara basmalah. Ia diprotes oleh para sahabat lain yang hadir disitu. Akhirnya pada salat berikutnya Muawiyah mengeraskan bacaan basmalah. \nKalau kita perhatikan bahwa sahabat-sahabat Rasulullah saw telah sependapat menuliskan Basmalah pada permulaan surah dari surah Al-Qur′an, kecuali surah at-Taubah (karena memang dari semula turunnya tidak dimulai dengan Basmalah) dan bahwa Rasulullah saw melarang menuliskan sesuatu yang bukan Al-Qur′an agar tidak bercampur aduk dengan Al-Qur′an, sehingga mereka tidak menuliskan ‘āmīn’ pada akhir surah al-Fātiḥah, maka Basmalah itu adalah salah satu ayat dari Al-Qur′an. Dengan kata lain, bahwa “basmalah-basmalah” yang terdapat di dalam Al-Qur′an adalah ayat-ayat Al-Qur′an, lepas dari pendapat apakah satu ayat dari al-Fātiḥah atau dari surah lain, yang dimulai dengan Basmalah atau tidak.\nSebagaimana disebutkan di atas bahwa surah al-Fātiḥah itu terdiri dari tujuh ayat. Mereka yang berpendapat bahwa Basmalah itu tidak termasuk satu ayat dari al-Fātiḥah, memandang:\nغَيْرِ الْمَغْضُوْبِ عَلَيْهِمْ وَلَا الضَّاۤلِّيْنَ ࣖ  \nadalah salah satu ayat, dengan demikian ayat-ayat al-Fātiḥah itu tetap tujuh.\nبِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ \n“Dengan nama Allah” maksudnya “Dengan nama Allah saya baca atau saya mulai”. Seakan-akan Nabi berkata, “Saya baca surah ini dengan menyebut nama Allah, bukan dengan menyebut nama saya sendiri, sebab ia wahyu dari Tuhan, bukan dari saya sendiri.” Maka Basmalah di sini mengandung arti bahwa Al-Qur′an itu wahyu dari Allah, bukan karangan Muhammad saw dan Muhammad itu hanyalah seorang Pesuruh Allah yang dapat perintah menyampaikan Al-Qur′an kepada manusia.;Makna kata Allāh \nAllah adalah nama bagi Zat yang ada dengan sendirinya (wājibul-wujūd). Kata “Allah” hanya dipakai oleh bangsa Arab kepada Tuhan yang sebenarnya, yang berhak disembah, yang mempunyai sifat-sifat kesempurnaan. Mereka tidak memakai kata itu untuk tuhan-tuhan atau dewa-dewa mereka yang lain. \n \nHikmah Membaca Basmalah\nSeorang yang selalu membaca Basmalah sebelum melakukan pekerjaan yang penting, berarti ia selalu mengingat Allah pada setiap pekerjaannya. Dengan demikian ia akan melakukan pekerjaan tersebut dengan selalu memperhatikan norma-norma Allah dan tidak merugikan orang lain. Dampaknya, pekerjaan yang dilakukannya akan berbuah sebagai amalan ukhrawi. \nSeorang Muslim diperintahkan membaca Basmalah pada waktu mengerjakan sesuatu yang baik. Yang demikian itu untuk mengingatkan bahwa sesuatu yang dikerjakan adalah karena perintah Allah, atau karena telah diizinkan-Nya. Maka karena Allah dia mengerjakan pekerjaan itu dan kepada-Nya dia meminta pertolongan agar pekerjaan terlaksana dengan baik dan berhasil.\nNabi saw bersabda:\nكُلُّ أَمْرٍ ذِيْ بَالٍ لَمْ يُبْدَأْ فِيْهِ بِبِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ أَقْطَعُ (رواه عبد القادر الرهاوي)\n“Setiap pekerjaan penting yang tidak dimulai dengan menyebut Basmalah adalah buntung (kurang berkahnya).” (Riwayat Abdul-Qādir ar-Rahāwī).;Orang Arab sebelum datang Islam mengerjakan sesuatu dengan menyebut al-Lāta dan al-‘Uzzā, nama-nama berhala mereka. Sebab itu, Allah mengajarkan kepada penganut-penganut agama Islam yang telah mengesakan-Nya, agar mereka mengerjakan sesuatu dengan menyebut nama Allah.",
+    "wajiz": "Aku memulai bacaan Al-Qur'an dengan menyebut nama Allah, nama teragung bagi satu-satunya Tuhan yang patut disembah, yang memiliki seluruh sifat kesempurnaan dan tersucikan dari segala bentuk kekurangan, Yang Maha Pengasih, Pemilik dan sumber sifat kasih Yang menganugerahkan segala macam karunia, baik besar maupun kecil, kepada seluruh makhluk, Maha Penyayang Yang tiada henti memberi kasih dan kebaikan kepada orang-orang yang beriman. Memulai setiap pekerjaan dengan menyebut nama Allah (basmalah) akan mendatangkan keberkahan, dan dengan mengingat Allah dalam setiap pekerjaan, seseorang akan memiliki kekuatan spiritual untuk melakukan yang terbaik dan menghindar dari keburukan."
+  }
+}
+      </pre>
+    </div>
+    <p>Host: muslim-api-three.vercel.app</p>
+    <p>Accept: */*</p>
+    <p>Content-Type: application/json</p>
+  </div>
+  <!-- Theme -->
+  <h3>Daftar Tema</h3>
+  <h5>Request</h5>
+  <div class="method">
+    <p class="title">Semua (-+95 KB)</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/quran/theme</p>
+    </div>
+  </div>
+  <div class="method">
+    <p class="title">Spesifik</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/quran/theme?id={themeId}</p>
+    </div>
+  </div>
+  <h5>Contoh</h5>
+  <div class="example">
+    <p>
+      GET /v1/quran/theme
+      <a data-toggle="collapse" href="#collapse17">Response</a>
+    </p>
+    <div id="collapse17" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f22526b033a118420820e",
+      "id": "1",
+      "name": "Tiga Golongan Manusia dalam Menyikapi Kebenaran Al-Qur’an"
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>
+      GET /v1/quran/theme?id=1
+      <a data-toggle="collapse" href="#collapse18">Response</a>
+    </p>
+    <div id="collapse18" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": {
+    "_id": "664f22526b033a118420820e",
+    "id": "1",
+    "name": "Tiga Golongan Manusia dalam Menyikapi Kebenaran Al-Qur’an"
+  }
+}
+      </pre>
+    </div>
+    <p>Host: muslim-api-three.vercel.app</p>
+    <p>Accept: */*</p>
+    <p>Content-Type: application/json</p>
+  </div>
+  <!-- Word -->
+  <h3>Kata Perkata</h3>
+  <h5>Request</h5>
+  <div class="method">
+    <p class="title">Semua (-+9 MB)</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/quran/word</p>
+    </div>
+  </div>
+  <div class="method">
+    <p class="title">Kata Berdasarkan Surah</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/quran/word/surah?id={surahId}</p>
+    </div>
+  </div>
+  <div class="method">
+    <p class="title">Kata Berdasarkan Ayat</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/quran/word/ayah?id={surahId}&ayahId={ayahId}</p>
+    </div>
+  </div>
+  <p class="footer">
+    *note: Untuk mengambil semua kata memerlukan waktu karena data berukuran
+    besar.
+  </p>
+  <h5>Contoh</h5>
+  <div class="example">
+    <p>
+      GET /v1/quran/word
+      <a data-toggle="collapse" href="#collapse19">Response</a>
+    </p>
+    <div id="collapse19" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f262b6b033a118425a029",
+      "arab": "بِسْمِ",
+      "ayah": "1",
+      "id": "id",
+      "indo": "dengan nama",
+      "surah": "1",
+      "word": "1"
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>
+      GET /v1/quran/word/surah?id=1
+      <a data-toggle="collapse" href="#collapse20">Response</a>
+    </p>
+    <div id="collapse20" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f262b6b033a118425a029",
+      "arab": "بِسْمِ",
+      "ayah": "1",
+      "id": "id",
+      "indo": "dengan nama",
+      "surah": "1",
+      "word": "1"
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>
+      GET /v1/quran/word/ayah?surahId=1&ayahId=1
+      <a data-toggle="collapse" href="#collapse21">Response</a>
+    </p>
+    <div id="collapse21" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f262b6b033a118425a029",
+      "arab": "بِسْمِ",
+      "ayah": "1",
+      "id": "id",
+      "indo": "dengan nama",
+      "surah": "1",
+      "word": "1"
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>Host: muslim-api-three.vercel.app</p>
+    <p>Accept: */*</p>
+    <p>Content-Type: application/json</p>
+  </div>
+</section>
+
+<section id="api" class="api section">
+  <h2>Doa</h2>
+  <br />
+  <h3>Daftar Doa</h3>
+  <h5>Request</h5>
+  <div class="method">
+    <p class="title">Semua (-+76 KB)</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/doa</p>
+    </div>
+  </div>
+  <div class="method">
+    <p class="title">Spesifik</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/doa?source={source}</p>
+    </div>
+  </div>
+  <div class="method">
+    <p class="title">Cari Doa Berdasarkan Judul</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/doa/find?query={query}</p>
+    </div>
+  </div>
+  <p class="footer">
+    *source: (quran, hadits, pilihan, harian, ibadah, haji, lainnya)
+  </p>
+  <h5>Contoh</h5>
+  <div class="example">
+    <p>
+      GET /v1/doa
+      <a data-toggle="collapse" href="#collapse22">Response</a>
+    </p>
+    <div id="collapse22" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f20f06b033a11841ea6cc",
+      "arab": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+      "indo": "Ya Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan lindungilah kami dari azab neraka.",
+      "judul": "Doa Mohon Kebaikan Dunia dan Akhirat",
+      "source": "quran"
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>
+      GET /v1/doa?source=quran
+      <a data-toggle="collapse" href="#collapse23">Response</a>
+    </p>
+    <div id="collapse23" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f20f06b033a11841ea6cc",
+      "arab": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+      "indo": "Ya Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan lindungilah kami dari azab neraka.",
+      "judul": "Doa Mohon Kebaikan Dunia dan Akhirat",
+      "source": "quran"
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>
+      GET /v1/doa/find?query=Kebaikan
+      <a data-toggle="collapse" href="#collapse24">Response</a>
+    </p>
+    <div id="collapse24" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f20f06b033a11841ea6cc",
+      "arab": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+      "indo": "Ya Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan lindungilah kami dari azab neraka.",
+      "judul": "Doa Mohon Kebaikan Dunia dan Akhirat",
+      "source": "quran"
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>Host: muslim-api-three.vercel.app</p>
+    <p>Accept: */*</p>
+    <p>Content-Type: application/json</p>
+  </div>
+</section>
+
+<section id="api" class="api section">
+  <h2>Dzikir</h2>
+  <br />
+  <h3>Dzikir Harian</h3>
+  <h5>Request</h5>
+  <div class="method">
+    <p class="title">Semua (-+40 KB)</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/dzikir</p>
+    </div>
+  </div>
+  <div class="method">
+    <p class="title">Spesifik</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/dzikir?type={type}</p>
+    </div>
+  </div>
+  <p class="footer">*type: (pagi, sore, solat)</p>
+  <h5>Contoh</h5>
+  <div class="example">
+    <p>
+      GET /v1/dzikir
+      <a data-toggle="collapse" href="#collapse25">Response</a>
+    </p>
+    <div id="collapse25" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f21476b033a11841f1d16",
+      "arab": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
+      "indo": "Aku berlindung kepada Allah dari godaan syaitan yang terkutuk.",
+      "type": "pagi",
+      "ulang": "1x"
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>
+      GET /v1/dzikir?type=pagi
+      <a data-toggle="collapse" href="#collapse26">Response</a>
+    </p>
+    <div id="collapse26" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f21476b033a11841f1d16",
+      "arab": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
+      "indo": "Aku berlindung kepada Allah dari godaan syaitan yang terkutuk.",
+      "type": "pagi",
+      "ulang": "1x"
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>Host: muslim-api-three.vercel.app</p>
+    <p>Accept: */*</p>
+    <p>Content-Type: application/json</p>
+  </div>
+</section>
+
+<section id="api" class="api section">
+  <h2>Hadits</h2>
+  <br />
+  <h3>Daftar Hadits</h3>
+  <h5>Request</h5>
+  <div class="method">
+    <p class="title">Semua (-+81 KB)</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/hadits</p>
+    </div>
+  </div>
+  <div class="method">
+    <p class="title">Spesifik</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/hadits?nomor={nomor}</p>
+    </div>
+  </div>
+  <div class="method">
+    <p class="title">Cari Hadits Berdasarkan Judul</p>
+    <div class="request">
+      <span>GET</span>
+      <p>/v1/hadits/find?query={query}</p>
+    </div>
+  </div>
+  <h5>Contoh</h5>
+  <div class="example">
+    <p>
+      GET /v1/hadits
+      <a data-toggle="collapse" href="#collapse27">Response</a>
+    </p>
+    <div id="collapse27" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f219e6b033a11841f8ed3",
+      "arab": "عَنْ أَمِيرِ المُؤمِنينَ أَبي حَفْصٍ عُمَرَ بْنِ الخَطَّابِ رَضيَ اللهُ عنْهُ قَالَ: سَمِعْتُ رَسُولَ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ يَقُوْلُ: (( إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَِى اللهِ وَرَسُوْلِهِ فَهِجْرَتُهُ إِلَى اللهِ وَرَسُوْلِهِ، وَمَنْ كَانَتْ هِجْرَتُهُ لِدُنْيَا يُصِيْبُهَا، أَوْ امْرَأَةٍ يَنْكِحُهَا، فَهِجْرَتُهُ إِلَى مَا هَاجَرَ إِلَيْهِ )). رَوَاهُ إِمَامَا الْمُحَدِّثِيْنَ أَبُوْ عَبْدِ اللهِ مُحَمَّدُ بْنُ إِسْمَاعِيْلَ بْنِ إِبْرَاهِيْمَ بْنِ الْمُغِيْرَةِ بْنِ بَرْدِزْبَهْ الْبُخَارِيُّ، وَأَبُوْ الْحُسَيْنِ مُسْلِمُ بْنُ الْحَجَّاجِ بْنِ مُسْلِمٍ الْقُشَيْرِيّ النَّيْسَابُوْرِيّ، فِيْ صَحِيْحَيْهِمَا اللَّذَيْنِ هُمَا أَصَحُّ الْكُتُبِ اْلمُصَنَّفَةِ.",
+      "indo": "Dari Amirul Mukminin Abu Hafsh Umar bin Al Khaththab adia berkata: ‘Aku mendengar Rasulullah shalallahu alaihi wasalam bersabda: “Amalan-amalan itu hanyalah tergantung pada niatnya. Dan setiap orang itu hanyalah akan dibalas berdasarkan apa yang ia niatkan. Maka barang siapa yang hijrahnya kepada Allah dan Rasul-Nya, maka hijrahnya keapda Allah dan Rasul-Nya. Namun barang siapa yang hijrahnya untuk mendapatkan dunia atau seorang wanita yang ingin ia nikahi, maka hijrahnya kepada apa yang ia niatkan tersebut.” (Diriwayatkan oleh dua Imamnya para ahli hadits, Abu Abdillah Muhammad bin Isma’il bin Ibrahim bin Al Mughirah bin Bardizbah Al Bukhari dan Abul Husain Muslim bin Al Hajjaj  bin Muslim Al Qusyairi An Naisaburi dalam dua kitab shahih mereka, yang keduanya merupakan kitab yang paling shahih diantara kitab-kitab yang ada.). Diriwayatkan oleh al Bukhari (1) dan Muslim (1907).",
+      "judul": "Amalan Bergantung pada Niat",
+      "no": "1"
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>
+      GET /v1/hadits?nomor=10
+      <a data-toggle="collapse" href="#collapse28">Response</a>
+    </p>
+    <div id="collapse28" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": {
+    "_id": "664f219e6b033a11841f8edc",
+    "arab": "عَنْ أَبِيْ هُرَيْرَةَ رَضِيَ اللهُ تَعَالَى عَنْهُ قَالَ: قَالَ رَسُوْلُ اللهِ: (إِنَّ اللهَ تَعَالَى طَيِّبٌ لاَ يَقْبَلُ إِلاَّ طَيِّبَاً وَإِنَّ اللهَ أَمَرَ المُؤْمِنِيْنَ بِمَا أَمَرَ بِهِ المُرْسَلِيْنَ فَقَالَ: (يَا أَيُّهَا الرُّسُلُ كُلُوْا مِنَ الطَّيِّبَاتِ وَاعْمَلُوْا صَالِحاً) (المؤمنون: الآية 51) ، وَقَالَ: (يَا أَيُّهَا الَّذِيْنَ آمَنُوْا كُلُوْا مِنْ طَيِّبَاتِ مَا رَزَقْنَاكُمْ) (البقرة: الآية 172)،ثُمَّ ذَكَرَ الرَّجُلَ يُطِيْلُ السَّفَرَ أَشْعَثَ أَغْبَرَ يَمُدُّ يَدَيْهِ إِلَى السَّمَاءِ: يَا رَبِّ يَا رَبِّ، وَمَطْعَمُهُ حَرَامٌ، وَمَشْرَبُهُ حَرَامٌ، وَمَلْبَسُهُ حَرَامٌ وَغُذِّيَ بِالحَرَامِ فَأَنَّى يُسْتَجَابُ لِذَلِكَ) رَوَاهُ مُسْلِمٌ.",
+    "indo": "Dari Abu Hurairah radhiyallahu ‘anhu, dia berkata: ‘Rasulullah shallallahu ‘alaihi wa sallam bersabda: “Sesungguhnya Allah Maha Baik dan tidak menerima kecuali yang baik. Dan sesungguhnya Allah subhanahu wa ta’ala telah memerintahkan kepada kaum mukminin dengan sesuatu yang Allah perintahkan pula kepada para rasul. Maka Allah subhanahu wa ta’ala berfirman: ”Wahai para rasul, makanlah dari makanan yang baik-baik dan kerjakanlah amal shalih.” Dan Allah subhanahu wa ta’ala berfirman: ”Wahai orang-orang yang beriman, makanlah kalian dari rezeki yang baik-baik yang telah Kami berikan kepada kalian.” Kemudian beliau shallallahu ‘alaihi wa sallam menyebutkan seseorang yang melakukan perjalanan panjang dalam keadaan dirinya kusut dan kotor, dia menengadahkan kedua tangannya ke langit seraya berdoa: ”Wahai Rabb-ku, wahai Rabb-ku,” namun makanannya haram, minumannya haram dan pakaiannya haram dan kenyang dengan sesuatu yang harom, lalu bagaimana mungkin doanya akan dikabulkan?.” (HR. Muslim) Diriwayatkan oleh Muslim (1015)",
+    "judul": "Allah Mahabaik dan Hanya Menerima yang Baik",
+    "no": "10"
+  }
+}
+      </pre>
+    </div>
+    <p>
+      GET /v1/hadits/find?query=Amalan
+      <a data-toggle="collapse" href="#collapse29">Response</a>
+    </p>
+    <div id="collapse29" class="collapse result">
+      <pre>
+{
+  "status": 200,
+  "data": [
+    {
+      "_id": "664f219e6b033a11841f8ed3",
+      "arab": "عَنْ أَمِيرِ المُؤمِنينَ أَبي حَفْصٍ عُمَرَ بْنِ الخَطَّابِ رَضيَ اللهُ عنْهُ قَالَ: سَمِعْتُ رَسُولَ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ يَقُوْلُ: (( إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَِى اللهِ وَرَسُوْلِهِ فَهِجْرَتُهُ إِلَى اللهِ وَرَسُوْلِهِ، وَمَنْ كَانَتْ هِجْرَتُهُ لِدُنْيَا يُصِيْبُهَا، أَوْ امْرَأَةٍ يَنْكِحُهَا، فَهِجْرَتُهُ إِلَى مَا هَاجَرَ إِلَيْهِ )). رَوَاهُ إِمَامَا الْمُحَدِّثِيْنَ أَبُوْ عَبْدِ اللهِ مُحَمَّدُ بْنُ إِسْمَاعِيْلَ بْنِ إِبْرَاهِيْمَ بْنِ الْمُغِيْرَةِ بْنِ بَرْدِزْبَهْ الْبُخَارِيُّ، وَأَبُوْ الْحُسَيْنِ مُسْلِمُ بْنُ الْحَجَّاجِ بْنِ مُسْلِمٍ الْقُشَيْرِيّ النَّيْسَابُوْرِيّ، فِيْ صَحِيْحَيْهِمَا اللَّذَيْنِ هُمَا أَصَحُّ الْكُتُبِ اْلمُصَنَّفَةِ.",
+      "indo": "Dari Amirul Mukminin Abu Hafsh Umar bin Al Khaththab adia berkata: ‘Aku mendengar Rasulullah shalallahu alaihi wasalam bersabda: “Amalan-amalan itu hanyalah tergantung pada niatnya. Dan setiap orang itu hanyalah akan dibalas berdasarkan apa yang ia niatkan. Maka barang siapa yang hijrahnya kepada Allah dan Rasul-Nya, maka hijrahnya keapda Allah dan Rasul-Nya. Namun barang siapa yang hijrahnya untuk mendapatkan dunia atau seorang wanita yang ingin ia nikahi, maka hijrahnya kepada apa yang ia niatkan tersebut.” (Diriwayatkan oleh dua Imamnya para ahli hadits, Abu Abdillah Muhammad bin Isma’il bin Ibrahim bin Al Mughirah bin Bardizbah Al Bukhari dan Abul Husain Muslim bin Al Hajjaj  bin Muslim Al Qusyairi An Naisaburi dalam dua kitab shahih mereka, yang keduanya merupakan kitab yang paling shahih diantara kitab-kitab yang ada.). Diriwayatkan oleh al Bukhari (1) dan Muslim (1907).",
+      "judul": "Amalan Bergantung pada Niat",
+      "no": "1"
+    },
+    ...
+  ]
+}
+      </pre>
+    </div>
+    <p>Host: muslim-api-three.vercel.app</p>
+    <p>Accept: */*</p>
+    <p>Content-Type: application/json</p>
+  </div>
+</section>
